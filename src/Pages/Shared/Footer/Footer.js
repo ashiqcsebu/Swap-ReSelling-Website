@@ -4,8 +4,8 @@ import logo from '../../../asset/logo/logo.png';
 
 const Footer = () => {
     return (
-       <div className="mt-12">
-<footer className="footer p-10 bg-light text-black text-base-content justify-items-center">
+       <div className="mt-12 text-black bg-gray-100">
+<footer className="footer p-10 justify-items-center">
  <div className="items-center grid-flow-col"> 
   <img className="h-15 w-20" src={logo} alt="" /> <br />
   <p className="font-bold text-3xl "><span className='text-info'>SWAP is first Re-commerce</span> <br /><span className='text-warning'> model in Bangladesh</span> </p> 
