@@ -1,8 +1,9 @@
 import React from "react";
-//import UseTitle from "../../UseTitle/UseTitle";
+import UseTitle from "../../hooks/useTitle";
+
 
 const Blog = () => {
-    // UseTitle('Blog')
+    UseTitle('Blog')
     return (
 
         <div className="mt-6 mb-2 text-black">
