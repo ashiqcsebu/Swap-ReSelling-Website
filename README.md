@@ -1,4 +1,4 @@
-# SWAP-A complete reselling Website to Buy and Sell Used Mobile Phone
+# SWAP-A Complete Re-selling Website to Buy and Sell Used Mobile Phone
 
 ## Description of project: Full Stack Web site based on MERN stack technology.
 
@@ -16,7 +16,7 @@
 * Extra Blog section is added to spread knowledge.
 
 
-Used Technology:
+## Used Technology: 
 Complete MERN stack Project
 * MongoDB as a database, React Front end,Node JS, Express js in Backend
 * Several package like Moment js, React Host Toast, React icons, TanStack Query ,Tailwind CSS , DaisyUI, 
@@ -28,9 +28,8 @@ Complete MERN stack Project
 https://swap-resell-website.web.app/
 
 ## Admin Acess Credential
-adminEmail: admin@gmail.com
-adminPassword: @Aa12345
-
+* adminEmail: admin@gmail.com
+* adminPassword: @Aa12345
 
 ##Back End:
 https://resale-server-woad.vercel.app/
