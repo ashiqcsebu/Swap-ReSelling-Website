@@ -1,19 +1,19 @@
 # SWAP-A complete reselling Website to Buy and Sell Used Mobile Phone
 
-Description of project: Full Stack Web site based on MERN stack technology.
+## Description of project: Full Stack Web site based on MERN stack technology.
 
-*Any User Can Register here to Advertise their product just doing resistration as a seller.
-*Any User can Book and Buy the advertised product just register here.
-*Product will be successfully purchased when paymnet is successful.
-*Seller Will get a Blue Badge when Admin verify his/ Her seller account.
-*Seller can add product in diffreent category vased on brand, See his enlisted , sold product.
-*Product will be shown in advertisements section when seller mark it to advertised.
-*Sold item will be removed from category as well as advertisement section.
-*Admin can Delete any user.
-*Google Api Logged in user will be Buyer by default.
-*There is a banner section to make my site more impressive. A customer review section is added also.
-*Payment system is integrated using Stripe Api
-*Extra Blog section is added to spread knowledge.
+* Any User Can Register here to Advertise their product just doing resistration as a seller.
+* Any User can Book and Buy the advertised product just register here.
+* Product will be successfully purchased when paymnet is successful.
+* Seller Will get a Blue Badge when Admin verify his/ Her seller account.
+* Seller can add product in diffreent category vased on brand, See his enlisted , sold product.
+* Product will be shown in advertisements section when seller mark it to advertised.
+* Sold item will be removed from category as well as advertisement section.
+* Admin can Delete any user.
+* Google Api Logged in user will be Buyer by default.
+* There is a banner section to make my site more impressive. A customer review section is added also.
+* Payment system is integrated using Stripe Api
+* Extra Blog section is added to spread knowledge.
 
 
 Used Technology:
