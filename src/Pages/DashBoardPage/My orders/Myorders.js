@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { myContext } from "../../../contextApi/Authcontext";
 import UseTitle from "../../../CustomeHOOk/useTitle/useTitle";
 const Myorders = () => {
-  UseTitle('Swap-MyOrder')
+  UseTitle('Swap-Dashboard')
   const { user } = useContext(myContext);
   const { data: bookedproduct = [], isLoading } = useQuery({
     queryKey: ["bookingproduct", user?.email],

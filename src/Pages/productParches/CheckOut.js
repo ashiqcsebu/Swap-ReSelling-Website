@@ -1,7 +1,8 @@
 import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js";
 import React, { useContext, useEffect, useState } from "react";
+
 import { myContext } from "../../contextApi/Authcontext";
-import UseTitle from "../../CustomeHOOk/useTitle/useTitle";
+
 
 const CheckOut = ({ bookedprodut }) => {
   const { user } = useContext(myContext)
@@ -16,7 +17,9 @@ const CheckOut = ({ bookedprodut }) => {
 
 
   useEffect(() => {
-    UseTitle('Swap-CheckOut')
+
+
+
     // Create PaymentIntent as soon as the page loads
     fetch("https://resale-server-woad.vercel.app/create-payment-intent", {
       method: "POST",
@@ -39,7 +42,7 @@ const CheckOut = ({ bookedprodut }) => {
     }
     const card = elements.getElement(CardElement);
 
-    if (card == null) {
+    if (card === null) {
       return;
     }
 
@@ -111,7 +114,7 @@ const CheckOut = ({ bookedprodut }) => {
     })
       .then(res => res.json())
       .then(data => {
-        console.log(data)
+        console.log('data')
 
       })
   }
