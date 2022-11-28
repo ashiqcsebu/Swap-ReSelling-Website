@@ -20,71 +20,71 @@ import SellerRouting from "./SellerRouting";
 
 const router = createBrowserRouter([
     {
-        path : '/', element : <Main></Main>,
-        errorElement : <ErrorPage></ErrorPage>,
-        children : [
+        path: '/', element: <Main></Main>,
+        errorElement: <ErrorPage></ErrorPage>,
+        children: [
             {
-                path : '/',
-                element : <Homepage></Homepage>
+                path: '/',
+                element: <Homepage></Homepage>
             },
             {
-                path : '/signup',
-                element : <Signup></Signup>
+                path: '/signup',
+                element: <Signup></Signup>
             },
             {
-                path : '/blog',
-                element : <Blgs></Blgs>
+                path: '/blog',
+                element: <Blgs></Blgs>
             },
             {
-                path : '/login',
-                element : <Login></Login>
+                path: '/login',
+                element: <Login></Login>
             },
             {
-                path : '/categori/:id',
-                element : <PrivetRouting><AllProducts></AllProducts></PrivetRouting>,
-                loader : ({params})=> fetch(`http://localhost:5000/categories/${params.id}`)
-           
+                path: '/categori/:id',
+                element: <PrivetRouting><AllProducts></AllProducts></PrivetRouting>,
+                loader: ({ params }) => fetch(`https://resale-server-woad.vercel.app/categories/${params.id}`)
+
             },
-            
+
         ]
     },
     {
-        path : '/dashbord', 
-        errorElement : <ErrorPage></ErrorPage>,
-        element : <PrivetRouting> <DashboardLayout></DashboardLayout> </PrivetRouting> ,
-        children : [
+        path: '/dashbord',
+        errorElement: <ErrorPage></ErrorPage>,
+        element: <PrivetRouting> <DashboardLayout></DashboardLayout> </PrivetRouting>,
+        children: [
             {
-                path : '/dashbord',
-                element : <Myorders></Myorders>
+                path: '/dashbord',
+                element: <Myorders></Myorders>
             },
             {
-                path : '/dashbord/parches/:id',
-                element : <ParchesProduct></ParchesProduct>,
-                loader : ({params})=> fetch(`http://localhost:5000/product/parces/${params.id}`)
-                
+                path: '/dashbord/parches/:id',
+                element: <ParchesProduct></ParchesProduct>,
+                loader: ({ params }) => fetch(`https://resale-server-woad.vercel.app/product/parces/${params.id}`)
+
             },
             {
-                path : '/dashbord/myproducts',
-                element : <SellerRouting><MyProducts></MyProducts></SellerRouting>
+                path: '/dashbord/myproducts',
+                element: <SellerRouting><MyProducts></MyProducts></SellerRouting>
             },
             {
-                path : '/dashbord/addproducts',
-                element : <SellerRouting><AddProduct></AddProduct></SellerRouting>
+                path: '/dashbord/addproducts',
+                element: <SellerRouting><AddProduct></AddProduct></SellerRouting>
             },
 
             {
-                path : '/dashbord/allseller',
-                element : <AdminRoute> <Allseller></Allseller> </AdminRoute>
+                path: '/dashbord/allseller',
+                element: <AdminRoute> <Allseller></Allseller> </AdminRoute>
             },
             {
-                path : '/dashbord/allbyer',
-                element : <AdminRoute> <AllByer></AllByer> </AdminRoute>
+                path: '/dashbord/allbyer',
+                element: <AdminRoute> <AllByer></AllByer> </AdminRoute>
             },
             {
-                path : '/dashbord/report',
-                element : <AdminRoute> <Reports></Reports> </AdminRoute>
+                path: '/dashbord/report',
+                element: <AdminRoute> <Reports></Reports> </AdminRoute>
             },
-           
+
         ]
     }
 ])
