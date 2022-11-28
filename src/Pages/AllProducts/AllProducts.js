@@ -7,7 +7,7 @@ import UseTitle from '../../CustomeHOOk/useTitle/useTitle';
 import ProductCard from './ProductCard'
 const AllProducts = () => {
     UseTitle('Swap-AllProuct')
-    const { user, logOut } = useContext(myContext)
+    const { user } = useContext(myContext)
     const [modalinfo, setmodalinfo] = useState(null)
     const data = useLoaderData()
     const { category_name } = data
@@ -24,7 +24,7 @@ const AllProducts = () => {
         }
     })
     if (isLoading) {
-        return <p>lodding...</p>
+        return <progress className="progress w-56"></progress>
     }
 
 
@@ -35,7 +35,7 @@ const AllProducts = () => {
             {
                 product.length ? product.map(prod => <ProductCard setmodalinfo={setmodalinfo} key={prod._id} prod={prod}></ProductCard>)
                     :
-                    <h2 className='text-center text-3xl text-orange-300'>SomeThing Went to wrong please <button onClick={logOut} className='btn'>logout</button> </h2>
+                    <h2 className='text-center text-3xl text-orange-300'>Stock Out  </h2>
             }
             {modalinfo && <BookModal setmodalinfo={setmodalinfo} modalinfo={modalinfo}></BookModal>}
 
