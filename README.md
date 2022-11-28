@@ -24,7 +24,7 @@ Complete MERN stack Project
 *Frontend is hosted  on Firebase,
 *Backend is Hosted on Vercel.
 
-LIVE SITE LINK:
+LIVE SITE LINK: 
 
 https://swap-resell-website.web.app/
 
