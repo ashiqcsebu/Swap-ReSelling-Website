@@ -2,8 +2,11 @@ import { useQuery } from "@tanstack/react-query";
 import React, { useContext } from "react";
 
 import { myContext } from '../../../contextApi/Authcontext'
+import UseTitle from "../../../CustomeHOOk/useTitle/useTitle";
 
 const AllByer = () => {
+
+  UseTitle('Swap All Buyer')
   const { user } = useContext(myContext)
   const { data: bayers = [], isLoading, refetch } = useQuery({
     queryKey: ["bayer", user?.email],

@@ -7,7 +7,7 @@ import UseTitle from '../../../CustomeHOOk/useTitle/useTitle';
 
 
 const Navbar = () => {
-    UseTitle('Swap-Home')
+    UseTitle('Swap-DashBoard')
 
     const { user, logOut } = useContext(myContext);
 

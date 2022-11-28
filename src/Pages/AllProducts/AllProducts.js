@@ -3,8 +3,10 @@ import React, { useContext, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import BookModal from '../../component/BookModal';
 import { myContext } from '../../contextApi/Authcontext';
+import UseTitle from '../../CustomeHOOk/useTitle/useTitle';
 import ProductCard from './ProductCard'
 const AllProducts = () => {
+    UseTitle('Swap-AllProuct')
     const { user, logOut } = useContext(myContext)
     const [modalinfo, setmodalinfo] = useState(null)
     const data = useLoaderData()

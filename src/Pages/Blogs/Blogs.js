@@ -1,6 +1,8 @@
 import React from "react";
+import UseTitle from "../../CustomeHOOk/useTitle/useTitle";
 
 const Blogs = () => {
+    UseTitle('Swap Blog')
 
     return (
 
