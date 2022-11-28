@@ -18,23 +18,21 @@
 
 Used Technology:
 Complete MERN stack Project
-*MongoDB as a database, React Front end,Node JS, Express js in Backend
-*Several package like Moment js, React Host Toast, React icons, TanStack Query ,Tailwind CSS , DaisyUI, 
-*Firebase for validation.
-*Frontend is hosted  on Firebase,
-*Backend is Hosted on Vercel.
+* MongoDB as a database, React Front end,Node JS, Express js in Backend
+* Several package like Moment js, React Host Toast, React icons, TanStack Query ,Tailwind CSS , DaisyUI, 
+* Firebase for validation.
+* Frontend is hosted  on Firebase,
+* Backend is Hosted on Vercel.
 
-LIVE SITE LINK: 
-
+## LIVE SITE LINK: 
 https://swap-resell-website.web.app/
 
-Admin Acess Credential
+## Admin Acess Credential
 adminEmail: admin@gmail.com
 adminPassword: @Aa12345
 
 
-Back End:
- 
+##Back End:
 https://resale-server-woad.vercel.app/
 
 
