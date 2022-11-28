@@ -37,11 +37,9 @@ const CampainCard = ({ campcard }) => {
         <h2 className="card-title text-3xl font-bold mx-auto text-fuchsia-700">{product_name}</h2>
         <h2 className="font-bold text-green-400"> $ {product_price} </h2>
         <h2 className="font-bold text-red-500"> <del> $ {Market_Price}</del> </h2>
-
         <div className="flex items-center"> <span className="text-2xl font-semi-bold mr-2">Post by - {sellerName}</span>
           {user?.verified === true && <span className="text-xl text-blue-500"><GoVerified /></span>}
         </div>
-        {/* <h5 className="text-xl font-semibold">Post by {sellerName} </h5> */}
         <h5 className=""> {time} </h5>
         <div className="card-actions justify-end">
 

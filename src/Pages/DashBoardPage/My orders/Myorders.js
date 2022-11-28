@@ -23,7 +23,7 @@ const Myorders = () => {
   });
 
   if (isLoading) {
-    return <p>loadding ....</p>;
+    return <progress className="progress w-56"></progress>;
   }
   return (
     <>
@@ -56,7 +56,7 @@ const Myorders = () => {
                       {
                         booked.sold === true ?
                           <button className="btn btn-success">
-                            Payed
+                            Paid
                           </button>
                           :
                           <>
