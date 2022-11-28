@@ -3,9 +3,11 @@ import { useForm } from 'react-hook-form';
 import toast from 'react-hot-toast';
 import { Link, useNavigate } from 'react-router-dom';
 import { myContext } from '../../contextApi/Authcontext';
-
 import img from '../../asset/images/login/signup.svg';
+import UseTitle from '../../CustomeHOOk/useTitle/useTitle';
+
 const Signup = () => {
+    UseTitle('Swap-Sign Up')
     const { register, handleSubmit, formState: { errors }, } = useForm();
     const [signUpError, setSignUPError] = useState('')
     const { signuP, updateUser } = useContext(myContext)

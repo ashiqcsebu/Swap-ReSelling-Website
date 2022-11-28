@@ -1,7 +1,3 @@
-
-
-
-
 import React from 'react';
 import people1 from '../../../../src/asset/images/review/people1.png'
 import people2 from  '../../../../src/asset/images/review/people2.png'
@@ -9,21 +5,24 @@ import people3 from  '../../../../src/asset/images/review/people3.png'
 import Review from './Review';
 
 const Reviews = () => {
+    
     const reviews = [
+
         {
             _id: 1, 
-            name: 'Saifuzzaman Shuvo',
-            img: people1,
-            review: "There was no such service like SWAP in our area before. It's great to be able to sell so beautifully online. I did not expect to get such service in Chuadanga. We will get many benefits if we get such service in future.",
-            location: 'Mirpur, Dhaka'
-        },
-        {
-            _id: 2, 
             name: 'Jesmin Akhter',
             img: people2,
             review: "I did not expect to get such a service in a pandemic situation. Very good initiative. If the situation gets better, more services will come. Thanks to you!",
             location: 'Gulsan,Dhaka'
         },
+        {
+            _id: 2, 
+            name: 'Saifuzzaman Shuvo',
+            img: people1,
+            review: "There was no such service like SWAP in our area before. It's great to be able to sell so beautifully online. I did not expect to get such service in Chuadanga. We will get many benefits if we get such service in future.",
+            location: 'Mirpur, Dhaka'
+        },
+      
         {
             _id: 3, 
             name: 'Nasrin Jahan',

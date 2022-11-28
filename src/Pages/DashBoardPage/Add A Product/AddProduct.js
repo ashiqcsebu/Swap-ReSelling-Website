@@ -4,8 +4,10 @@ import { useForm } from 'react-hook-form';
 import toast from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
 import { myContext } from '../../../contextApi/Authcontext';
+import UseTitle from '../../../CustomeHOOk/useTitle/useTitle';
 
 const AddProduct = () => {
+    UseTitle('Swap-Add Product')
     const { register, handleSubmit, formState: { errors }, } = useForm();
     const { user } = useContext(myContext)
     const naviget = useNavigate()

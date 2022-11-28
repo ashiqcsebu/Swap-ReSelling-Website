@@ -1,7 +1,8 @@
-
-
 import React from 'react';
+import UseTitle from '../../../CustomeHOOk/useTitle/useTitle';
+
 const Review = ({ review }) => {
+    UseTitle('Swap-Review')
     const { name, img, review: userReview, location } = review;
     return (
         <div className="card w-96 md:w-full lg:w-full shadow-xl text-black">

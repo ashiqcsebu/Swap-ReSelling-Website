@@ -3,9 +3,11 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../../../src/asset/logo/logo.png'
 import  { myContext } from '../../../contextApi/Authcontext';
+import UseTitle from '../../../CustomeHOOk/useTitle/useTitle';
 
 
 const Navbar = () => {
+    UseTitle('Swap-Home')
 
     const { user, logOut } = useContext(myContext);
 

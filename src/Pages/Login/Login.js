@@ -3,8 +3,10 @@ import { useForm } from 'react-hook-form';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { myContext } from '../../contextApi/Authcontext';
 import img from '../../asset/images/login/login.svg';
+import UseTitle from '../../CustomeHOOk/useTitle/useTitle';
 
 const Login = () => {
+    UseTitle('Swap-LogIN')
     const { register, handleSubmit, formState: { errors }, } = useForm();
     const [loginError, setLoginError] = useState('');
     const { logIn, googleSignin } = useContext(myContext)
